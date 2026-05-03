@@ -1,0 +1,61 @@
+@import url("/normalize.css");
+
+@font-face {
+    font-family: "Azeret Mono";
+    src: url("/assets/fonts/fonts-mix/AzeretMono-Bold.woff2") format("woff2"),
+        url("/assets/fonts/fonts-mix/AzeretMono-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Azeret Mono";
+    src: url("/assets/fonts/fonts-mix/AzeretMono-Regular.woff2") format("woff2"),
+        url("/assets/fonts/fonts-mix/AzeretMono-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/fonts-mix/Inter-Bold.woff2") format("woff2"),
+        url("/assets/fonts/fonts-mix/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/fonts-mix/Inter-Regular.woff2") format("woff2"),
+        url("/assets/fonts/fonts-mix/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/fonts-mix/Inter-Thin.woff2") format("woff2"),
+        url("/assets/fonts/fonts-mix/Inter-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font: 32px/1.4 "Inter", "Helvetica", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 100dvh;
+    flex: 1;
+}
+
