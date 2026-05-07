@@ -46,7 +46,7 @@
 }
 
 html {
-    font: 32px/1.4 "Inter", "Helvetica", sans-serif;
+    font: 32px "Inter", "Helvetica", sans-serif;
 }
 
 .wrapper {
@@ -68,33 +68,55 @@ main {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 22.5px 20px;
+    padding: 21.5px 36px;
 }
 
-.nav__list {
+.nav__list,
+.social-links__list {
     display: flex;
     gap: 20px;
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
-.nav__link {
+.nav__link,
+.social-links__link {
     display: block;
+    height: 24px;
     color: rgb(210 116 135 / 1);
     text-decoration: none;
     font-size: 15px;
     line-height: 1.6;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
-.nav__link:focus {
+.nav__link:hover,
+.social-links__link:hover,
+.nav__link:focus,
+.social-links__link:focus {
     outline: 1px solid rgb(210 116 135 / 1);
     outline-offset: 5px;
 }
 
-.nav__link:hover,
-.nav__link:active {
+.nav__link:active,
+.social-links__link:active {
     font-weight: 700;
+    outline: 3px solid rgb(210 116 135 / 1);
+
+}
+
+.header__logo {
+    height: 32px;
+}
+
+.header__img {
+    max-width: 1328px;
+    margin: 0 auto;
+    margin-bottom: 36px;
 }
     
 
