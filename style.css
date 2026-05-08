@@ -61,6 +61,8 @@ main {
     flex: 1;
 }
 
+/*Header styles start*/
+
 .header {
     background-color: rgb(74 43 51 / 1);
 }
@@ -91,7 +93,7 @@ main {
     font-size: 15px;
     line-height: 1.6;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav__link:hover,
@@ -106,7 +108,7 @@ main {
 .social-links__link:active {
     font-weight: 700;
     outline: 3px solid rgb(210 116 135 / 1);
-
+    transform: translate(2px, -2px);
 }
 
 .header__logo {
@@ -118,6 +120,74 @@ main {
     margin: 0 auto;
     margin-bottom: 36px;
 }
+
+/*Header styles end*/
+
+.about-us__wrapper {
+    max-width: 900px;
+    margin: 220px auto;
+}
+
+.about-us__wrapper > * {
+    text-align: center;
+    margin: 0;
+}
+
+.about-us__title,
+.menu__title {
+    font: 18px "Azeret Mono", "Helvetica", sans-serif;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.about-us__desc {
+    max-width: 900px;
+    line-height: 44.8px;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(233 233 227 / 1);
+}
+
+.menu__wrapper {
+    display: flex;
+    max-width: 1328px;
+    margin: 120px auto;
+}
+
+.menu__wrapper > * {
+    flex: 1 1 664px;
+}
+
+.menu__control > * {
+    color: rgb(111 111 100 / 1);
+    margin: 0;
+}
+
+.menu__desc {
+    width: 558px;
+    line-height: 44.8px;
+    margin-top: 17px;
+    margin-bottom: 63px;
+}
+
+.menu__btn {
+    width: 531px;
+    background-color: rgb(233 233 227 / 1);
+    border: 2px solid rgb(111 111 100 / 1);
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    padding: 17px 219px;
+}
+
+.menu__btn_active {
+    background-color: rgb(111 111 100 / 1);
+    color: rgb(255 255 255 / 1);
+
+}
+
     
 
     

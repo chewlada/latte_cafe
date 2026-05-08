@@ -64,181 +64,186 @@
 
         <main>
             <section class="about-us">
-                <h2 class="about-us__title">About Us</h2>
-                <p class="about-us__desc">Tucked away in the corner of Wellington, Latte Cafe is a local neighbourhood cafe and bar. Latte is all about doing what we love, in a city that we love. We keep stocked with local produce and pastries. Bring your family for a bite, or meet your friends for a coffee or warm drink.</p>
+                <div class="about-us__wrapper">
+                    <h2 class="about-us__title">About Us</h2>
+                    <p class="about-us__desc">Tucked away in the corner of Wellington, Latte Cafe is a local neighbourhood cafe and bar. Latte is all about doing what we love, in a city that we love. We keep stocked with local produce and pastries. Bring your family for a bite, or meet your friends for a coffee or warm drink.</p>
+                </div>
             </section>
 
             <section class="menu">
-                <div class="menu__control">
-                    <h2 class="menu__title">Menu</h2>
-                    <p class="menu__desc">We change our menu every season. Here is what we are currently dishing up.</p>
-                    <button class="menu__btn">Food Menu</button>
-                    <button class="menu__btn">Drinks Menu</button>
-                </div>
-                <div class="menu__content">
-                    <div class="logo">
-                        <svg class="logo__svg" width="276" height="32" viewBox="0 0 276 32">
-                            <use href="/assets/icons/sprite.svg#logo"></use>
-                        </svg>
-                    </div> 
-        <!--Пока не ясна реализация, лучше всего сделать изменяющимся по кнопке текстом, а не картинкой-->
-                    <div class="menu__wrapper food-menu">
-                        <section class="menu__section">
-                            <h3 class="menu__title">Entres</h3>
-                            <ul>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Avocado Pear Soup</p>
-                                        <p class="item__desc">Avocado, Saratoga Chips, Szechuan Button</p>
-                                        <p class="item__price">$24</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Rocket Raisin Salad</p>
-                                        <p class="item__desc">Smoked Olive Oil, Fennel, Parmigiano di Reggiano</p>
-                                        <p class="item__price">$18</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Pepe Alla Chitarra</p>
-                                        <p class="item__desc">Spaghetti, Pancetta, Pecorino Romano</p>
-                                        <p class="item__price">$23</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Chilli Lobster</p>
-                                        <p class="item__desc">Served With Texas Toast</p>
-                                        <p class="item__price">$42</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="menu__section">
-                            <h3 class="menu__title">Mains</h3>
-                            <ul>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">New York Red Steak</p>
-                                        <p class="item__desc">Fiddleheads, Day Lily, Arugula, Fingerling Potatoes</p>
-                                        <p class="item__price">$63</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Fig And Rosemary Salad</p>
-                                        <p class="item__desc">Sauce Proposal, Cauliflower, Hazelnuts, Golden Rasins</p>
-                                        <p class="item__price">$46</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Everything From The Sea</p>
-                                        <p class="item__desc">White and Green Asparagus, Spring Onion, Sugar Snaps, Meyer Lemon</p>
-                                        <p class="item__price">$48</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Roasted Chicken And Duck Claypot</p>
-                                        <p class="item__desc">Yukon Gold Potatoes, Broccoli Rabe, Pan Drippings</p>
-                                        <p class="item__price">$59</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">2-Month Slow Beef In Wine</p>
-                                        <p class="item__desc">Charred Green Beans, Romesco, Beef Fat Balsamic Onion</p>
-                                        <p class="item__price">$43</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
+                <div class="menu__wrapper">
+                    <div class="menu__control">
+                        <h2 class="menu__title">Menu</h2>
+                        <p class="menu__desc">We change our menu every season. Here is what we are currently dishing up.</p>
+                        <button class="menu__btn menu__btn_active">Food Menu</button>
+                        <button class="menu__btn">Drinks Menu</button>
                     </div>
+                    <div class="menu__content">
+                        <div class="logo">
+                            <svg class="logo__svg" width="276" height="32" viewBox="0 0 276 32">
+                                <use href="/assets/icons/sprite.svg#logo"></use>
+                            </svg>
+                        </div> 
+            <!--Пока не ясна реализация, лучше всего сделать изменяющимся по кнопке текстом, а не картинкой-->
+                        <div class="menu__frame food-menu">
+                            <section class="menu__section">
+                                <h3 class="menu__title">Entres</h3>
+                                <ul>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Avocado Pear Soup</p>
+                                            <p class="item__desc">Avocado, Saratoga Chips, Szechuan Button</p>
+                                            <p class="item__price">$24</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Rocket Raisin Salad</p>
+                                            <p class="item__desc">Smoked Olive Oil, Fennel, Parmigiano di Reggiano</p>
+                                            <p class="item__price">$18</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Pepe Alla Chitarra</p>
+                                            <p class="item__desc">Spaghetti, Pancetta, Pecorino Romano</p>
+                                            <p class="item__price">$23</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Chilli Lobster</p>
+                                            <p class="item__desc">Served With Texas Toast</p>
+                                            <p class="item__price">$42</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="menu__section">
+                                <h3 class="menu__title">Mains</h3>
+                                <ul>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">New York Red Steak</p>
+                                            <p class="item__desc">Fiddleheads, Day Lily, Arugula, Fingerling Potatoes</p>
+                                            <p class="item__price">$63</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Fig And Rosemary Salad</p>
+                                            <p class="item__desc">Sauce Proposal, Cauliflower, Hazelnuts, Golden Rasins</p>
+                                            <p class="item__price">$46</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Everything From The Sea</p>
+                                            <p class="item__desc">White and Green Asparagus, Spring Onion, Sugar Snaps, Meyer Lemon</p>
+                                            <p class="item__price">$48</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Roasted Chicken And Duck Claypot</p>
+                                            <p class="item__desc">Yukon Gold Potatoes, Broccoli Rabe, Pan Drippings</p>
+                                            <p class="item__price">$59</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">2-Month Slow Beef In Wine</p>
+                                            <p class="item__desc">Charred Green Beans, Romesco, Beef Fat Balsamic Onion</p>
+                                            <p class="item__price">$43</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
 
-                    <div class="menu__wrapper drinks-menu">
-                        <section class="menu__section">
-                            <h3 class="menu__title">Coffee</h3>
-                            <ul>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">"V60 Natural" Filter</p>
-                                        <p class="item__desc">Ethiopia Guji, dry-processed with notes of Blueberry and Jasmine</p>
-                                        <p class="item__price">$12</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Flat White With Tonka Beans</p>
-                                        <p class="item__desc">Double Ristretto, Microfoam, Tonka Bean Extract</p>
-                                        <p class="item__price">$15</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Raf-caramel with Sea Salt</p>
-                                        <p class="item__desc">10% Cream, Maple Syrup, Fleur De Sel, Cinnamon Stick</p>
-                                        <p class="item__price">$15</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="menu__section">
-                            <h3 class="menu__title">Tea</h3>
-                            <ul>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Jasmine "Owl's Eye"</p>
-                                        <p class="item__desc">Hand-rolled Green Tea with Orchid Aroma</p>
-                                        <p class="item__price">$11</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Smoky Oolong "Da Hong Pao"</p>
-                                        <p class="item__desc">Dark roast, with notes of Smokehouse and Dried Cherries</p>
-                                        <p class="item__price">$13</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Earl Grey "The Library Rebel"</p>
-                                        <p class="item__desc">Black Tea, Lemon Zest, Fenugreek</p>
-                                        <p class="item__price">$10</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="menu__section">
-                            <h3 class="menu__title">Wine</h3>
-                            <ul>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Gulp Hablo, Orange (Germany)</p>
-                                        <p class="item__desc">An orange wine made from Pinot Gris, aged on the lees for 6 months</p>
-                                        <p class="item__price">$120</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Pinot Grigio "Senza Filtri" (Slovenia)</p>
-                                        <p class="item__desc">Unfiltered, pear and white pepper</p>
-                                        <p class="item__price">$124</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu__item">
-                                        <p class="item__title">Dry red "Corte Adami" (Italy, 2023 vintage)</p>
-                                        <p class="item__desc">A pure Nebbiolo, with light tannins, notes of cherry, and dried herbs</p>
-                                        <p class="item__price">$131</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
+                        <div class="menu__frame drinks-menu">
+                            <section class="menu__section">
+                                <h3 class="menu__title">Coffee</h3>
+                                <ul>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">"V60 Natural" Filter</p>
+                                            <p class="item__desc">Ethiopia Guji, dry-processed with notes of Blueberry and Jasmine</p>
+                                            <p class="item__price">$12</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Flat White With Tonka Beans</p>
+                                            <p class="item__desc">Double Ristretto, Microfoam, Tonka Bean Extract</p>
+                                            <p class="item__price">$15</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Raf-caramel with Sea Salt</p>
+                                            <p class="item__desc">10% Cream, Maple Syrup, Fleur De Sel, Cinnamon Stick</p>
+                                            <p class="item__price">$15</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="menu__section">
+                                <h3 class="menu__title">Tea</h3>
+                                <ul>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Jasmine "Owl's Eye"</p>
+                                            <p class="item__desc">Hand-rolled Green Tea with Orchid Aroma</p>
+                                            <p class="item__price">$11</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Smoky Oolong "Da Hong Pao"</p>
+                                            <p class="item__desc">Dark roast, with notes of Smokehouse and Dried Cherries</p>
+                                            <p class="item__price">$13</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Earl Grey "The Library Rebel"</p>
+                                            <p class="item__desc">Black Tea, Lemon Zest, Fenugreek</p>
+                                            <p class="item__price">$10</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="menu__section">
+                                <h3 class="menu__title">Wine</h3>
+                                <ul>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Gulp Hablo, Orange (Germany)</p>
+                                            <p class="item__desc">An orange wine made from Pinot Gris, aged on the lees for 6 months</p>
+                                            <p class="item__price">$120</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Pinot Grigio "Senza Filtri" (Slovenia)</p>
+                                            <p class="item__desc">Unfiltered, pear and white pepper</p>
+                                            <p class="item__price">$124</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu__item">
+                                            <p class="item__title">Dry red "Corte Adami" (Italy, 2023 vintage)</p>
+                                            <p class="item__desc">A pure Nebbiolo, with light tannins, notes of cherry, and dried herbs</p>
+                                            <p class="item__price">$131</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
                     </div>
                 </div>
+                
             </section>    
                     
             <div class="gallery">
