@@ -11,3 +11,5 @@ Copyright 2016-2020 The Inter Project Authors. "Inter" is trademark of Rasmus An
 
 В проекте подключение иконок выполнено спрайтом, методом описанным в статье https://doka.guide/html/svg-sprite/
 
+
+

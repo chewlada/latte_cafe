@@ -188,9 +188,52 @@ main {
 
 }
 
-/*Food-menu and drinks-menu styles start*/
+/*Food and drinks menu styles start*/
 
+.menu__content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255 255 255 / 1);;
+}
+
+.menu__content > * {
+    margin: 50px auto 0;
+}
+
+.menu__section {
+    text-align: center;
+}
+
+.menu__topic {
+    font: 22px "Azeret Mono", "Helvetica", sans-serif;
+    margin: 0;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 28px;
+}
+
+.menu__item > * {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.item__title {
+    font-weight: bold;
+}
+
+.item__price {
+    font-style: italic;
+}
     
-
+/*Food and drinks menu styles end*/
     
 
