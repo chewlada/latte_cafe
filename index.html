@@ -121,63 +121,66 @@
                 </div> 
             </section>
 
-            <form class="booking" action="#" method="post">
-                <h2 class="booking__title">Reserve a table online</h2>
-                <p class="booking__desc">To make a reservation, please fill out the form below and provide your name, 
-                    preferred date and time, and a phone number for us to contact you.</p>
-                <label class="form__label" 
-                        for="name">Enter your name</label>
-                <input class="form__input" 
-                        type="text" 
-                        name="name" 
-                        id="name" 
-                        placeholder="Enter your name" 
-                        required />
-                <label class="form__label" 
-                        for="tel">Enter your phone number</label>
-                <input class="form__input" 
-                        type="tel" 
-                        name="tel" 
-                        id="tel" 
-                        placeholder="Enter your phone number" 
-                        required />
-                <label class="form__label" 
-                        for="guest">Number of guests (please enter a number)</label>
-                <input class="form__input" 
-                        type="text"
-                        name="guest"
-                        id="guest" 
-                        placeholder="Number of guests (please enter a number)" 
-                        required />
-                <label class="form__label" 
-                        for="date">Select a date</label>
-                <input class="form__input" 
-                        type="date" 
-                        name="date" 
-                        id="date"  
-                        required />
-                <label class="form__label" 
-                        for="time">Select a time</label>
-                <select class="form__input" 
-                        name="time" 
-                        id="time"
-                        size="12"  
-                        required> <!--Может дропдаун?-->
-                    <option value="10AM">10AM</option>
-                    <option value="11AM">11AM</option>
-                    <option value="12PM">12PM</option>
-                    <option value="1PM">1PM</option>
-                    <option value="2PM">2PM</option>
-                    <option value="3PM">3PM</option>
-                    <option value="4PM">4PM</option>
-                    <option value="5PM">5PM</option>
-                    <option value="6PM">6PM</option>
-                    <option value="7PM">7PM</option>
-                    <option value="8PM">8PM</option>
-                    <option value="9PM">9PM</option>
-                </select>
-                <button class="booking__btn">Reserve</button>
-            </form>
+            <div class="booking__wrapper">
+                <form class="booking__form" action="#" method="post">
+                    <h2 class="booking__title">Reserve a table online</h2>
+                    <p class="booking__desc">To make a reservation, please fill out the form below and provide your name, 
+                        preferred date and time, and a phone number for us to contact you.</p>
+                    <label class="form__label" 
+                            for="name">Enter your name</label>
+                    <input class="form__input" 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Enter your name" 
+                            required />
+                    <label class="form__label" 
+                            for="tel">Enter your phone number</label>
+                    <input class="form__input" 
+                            type="tel" 
+                            name="tel" 
+                            id="tel" 
+                            placeholder="Enter your phone number" 
+                            required />
+                    <label class="form__label" 
+                            for="guest">Number of guests (please enter a number)</label>
+                    <input class="form__input" 
+                            type="text"
+                            name="guest"
+                            id="guest" 
+                            placeholder="Number of guests (please enter a number)" 
+                            required />
+                    <label class="form__label" 
+                            for="date">Select a date</label>
+                    <input class="form__input" 
+                            type="date" 
+                            name="date" 
+                            id="date"  
+                            required />
+                    <label class="form__label" 
+                            for="time">Select a time</label>
+                    <select class="form__input" 
+                            name="time" 
+                            id="time"
+                            size="12"  
+                            required> <!--Может дропдаун?-->
+                        <option value="10AM">10AM</option>
+                        <option value="11AM">11AM</option>
+                        <option value="12PM">12PM</option>
+                        <option value="1PM">1PM</option>
+                        <option value="2PM">2PM</option>
+                        <option value="3PM">3PM</option>
+                        <option value="4PM">4PM</option>
+                        <option value="5PM">5PM</option>
+                        <option value="6PM">6PM</option>
+                        <option value="7PM">7PM</option>
+                        <option value="8PM">8PM</option>
+                        <option value="9PM">9PM</option>
+                    </select>
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+            
         </main>
         
         <footer class="footer">

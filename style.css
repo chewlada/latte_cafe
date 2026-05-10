@@ -135,9 +135,12 @@ main {
 
 .about-us__title,
 .menu__title {
-    font: 18px "Azeret Mono", "Helvetica", sans-serif;
+    font: 18px/22px "Azeret Mono", "Helvetica", sans-serif;
     font-weight: bold;
-    line-height: 22px;
+}
+
+.about-us__title {
+    margin-bottom: 15px;
 }
 
 .about-us__desc {
@@ -168,8 +171,7 @@ main {
 .menu__desc {
     width: 558px;
     line-height: 44.8px;
-    margin-top: 17px;
-    margin-bottom: 63px;
+    margin: 17px 0 63px;
 }
 
 .menu__btn {
@@ -260,7 +262,7 @@ main {
 }
 
 .info__title {
-    font: 17px/22px "Azeret Mono", "Helvetica", sans-serif;
+    font: 18px/22px "Azeret Mono", "Helvetica", sans-serif;
     font-weight: bold;
     color: rgb(255 255 255 / 1);
     text-align: center;
@@ -275,3 +277,46 @@ main {
     line-height: 36px;
     letter-spacing: 1px;
 }
+
+/* Form styles start here*/
+
+.booking__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 120px auto;
+    background-color: rgb(74 43 51 / 1);
+    border-radius: 50px;
+}
+
+.booking__form > * {
+    color: rgb(210 116 135 / 1);
+}
+
+.booking__title {
+    font: 18px/22px "Azeret Mono", "Helvetica", sans-serif;
+    font-weight: bold;
+    margin: 120px auto;
+}
+
+.booking__desc {
+    line-height: 44.8px;
+    margin: 0 60px 60px;
+    text-align: center;
+}
+
+.form__label {
+    display: none;
+}
+
+.form__input {
+    font: 28px/43px "Azeret Mono", "Helvetica", sans-serif;
+    background-color: rgb(210 116 135 / 0.2);
+    color: rgb(74 43 51 / 1);
+    border: 3px solid rgb(210 116 135 / 1);
+    border-radius: 12px;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+/* Form styles end*/
