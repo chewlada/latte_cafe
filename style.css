@@ -247,3 +247,31 @@ main {
     gap: 40px;
     margin-right: 40px;
 }
+
+.info {
+    background-color: rgb(170 158 84 / 1);
+    display: flex;
+    gap: 80px;
+    padding: 120px 56px;
+}
+
+.info__item {
+    flex: 1;
+}
+
+.info__title {
+    font: 17px/22px "Azeret Mono", "Helvetica", sans-serif;
+    font-weight: bold;
+    color: rgb(255 255 255 / 1);
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.info__desc {
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(255 255 255 / 1);
+    text-align: center;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
