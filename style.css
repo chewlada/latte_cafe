@@ -236,3 +236,14 @@ main {
     
 /*Food and drinks menu styles end*/
     
+.gallery {
+    display: flex;
+    margin: 150px 56px 120px;
+}
+
+.gallery__col:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 40px;
+}
