@@ -93,7 +93,7 @@ main {
     font-size: 15px;
     line-height: 1.6;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s linear;
 }
 
 .nav__link:hover,
@@ -286,7 +286,8 @@ main {
     max-width: 1000px;
     margin: 120px auto;
     background-color: rgb(74 43 51 / 1);
-    border-radius: 50px;
+    border: 8px solid rgb(210 116 135 / 1);
+    border-radius: 100px;
 }
 
 .booking__form > * {
@@ -312,11 +313,30 @@ main {
 .form__input {
     font: 28px/43px "Azeret Mono", "Helvetica", sans-serif;
     background-color: rgb(210 116 135 / 0.2);
-    color: rgb(74 43 51 / 1);
+    color: rgb(210 116 135 / 1);
     border: 3px solid rgb(210 116 135 / 1);
-    border-radius: 12px;
+    border-radius: 15px;
     margin: 15px auto;
-    padding: 5px;
+    padding: 10px;
 }
+
+.form__input:hover,
+.form__input:focus {
+    border: 6px double rgb(210 116 135 / 1);
+    outline: none;
+}
+
+.form__input:last-child {
+    border-radius: 15px;
+    padding: 12px 40px;
+    margin-bottom: 120px;
+}
+
+.form__input:last-child:active {
+    font-weight: bold;
+    transform: translate(4px, -4px);
+}
+
+
 
 /* Form styles end*/
