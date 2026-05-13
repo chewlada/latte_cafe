@@ -88,39 +88,8 @@
                         </iframe>
                     </div>
                 </div>  
-            </section>    
-                    
-            <div class="gallery">
-                <div class="gallery__col">
-                    <img src="/assets/img/wine_bottles.png" alt="The photo shows a collection of wine bottles served in a cafe">
-                    <img src="/assets/img/dish.png" alt="The photo shows the most popular dish of the cafe &quot;Pepe alla Chitarra&quot;">
-                </div>
-                <div class="gallery__col">
-                    <img src="/assets/img/cafe_interior.png" alt="Photo of the interior of the cafe &quot;Latte Cafe&quot;">
-                </div>
-            </div>
-
-            <section class="info">
-                <div class="info__item">
-                    <h2 class="info__title">Location</h2>
-                    <address class="info__desc">
-                        <p>101 Cuba St,<br/>Te Aro, Wellington</p> 
-                    </address>
-                </div>
-                <div class="info__item">
-                    <h2 class="info__title">Hours</h2>
-                    <p class="info__desc">
-                        Tuesday to Friday<br/>10AM - 6PM
-                        <br/>
-                        Saturday to Sunday<br/>10AM - 9PM
-                    </p><!--Добавить атрибут datetime и микроданные во всю разметку-->  
-                </div>
-                <div class="info__item">
-                    <h2 class="info__title">Mondays?</h2>
-                    <p class="info__desc">We are closed on Mondays to reflect and refuel</p>
-                </div> 
-            </section>
-
+            </section> 
+            
             <div class="booking">
                 <form class="booking__form" action="#" method="post">
                     <h2 class="booking__title">Reserve a table online</h2>
@@ -182,30 +151,74 @@
                             value="Send" />
                 </form>
             </div>
+                    
+            <div class="gallery">
+                <div class="gallery__col">
+                    <img src="/assets/img/wine_bottles.png" alt="The photo shows a collection of wine bottles served in a cafe">
+                    <img src="/assets/img/dish.png" alt="The photo shows the most popular dish of the cafe &quot;Pepe alla Chitarra&quot;">
+                </div>
+                <div class="gallery__col">
+                    <img src="/assets/img/cafe_interior.png" alt="Photo of the interior of the cafe &quot;Latte Cafe&quot;">
+                </div>
+            </div>
+
+            <section class="info">
+                <div class="info__item">
+                    <h2 class="info__title">Location</h2>
+                    <address class="info__desc">
+                        <p>101 Cuba St,<br/>Te Aro, Wellington</p> 
+                    </address>
+                </div>
+                <div class="info__item">
+                    <h2 class="info__title">Hours</h2>
+                    <p class="info__desc">
+                        Tuesday to Friday<br/>10AM - 6PM
+                        <br/>
+                        Saturday to Sunday<br/>10AM - 9PM
+                    </p><!--Добавить атрибут datetime и микроданные во всю разметку-->  
+                </div>
+                <div class="info__item">
+                    <h2 class="info__title">Mondays?</h2>
+                    <p class="info__desc">We are closed on Mondays to reflect and refuel</p>
+                </div> 
+            </section>
             
         </main>
         
         <footer class="footer">
-            <div class="footer__row">
-                <svg class="logo__svg" width="276" height="32" viewBox="0 0 276 32">
-                    <use href="/assets/icons/sprite.svg#logo"></use>
-                </svg>
-            </div>
             <div class="navbar">
                 <nav class="nav">
-                    <a class="nav__item" href="#">About</a>
-                    <a class="nav__item" href="#">Menu</a>
-                    <a class="nav__item" href="#">Info</a>
-                    <a class="nav__item" href="#">Booking</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Menu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Info</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Booking</a>
+                        </li>
+                    </ul>  
                 </nav>
+            </div>
+            <div class="footer__logo">
+                <svg class="logo__svg" width="276" height="32" viewBox="0 0 276 32">
+                    <use href="/assets/icons/sprite.svg#menu-logo"></use>
+                </svg>
             </div>
             <div class="phone-us">
                 <div class="phone-us__icon">
-                    <svg class="phone-us__svg" width="24" height="24" viewBox="0 0 24 24">
-                        <use href="/assets/icons/sprite.svg#phone"></use>
-                    </svg>
+                    <a class="phone-us__link" href="tel:+88800000000" aria-label="Contact us">
+                        <svg class="phone-us__svg" width="48" height="48" viewBox="0 0 48 48">
+                            <use href="/assets/icons/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
                 </div>
                 <address>
+                    <p class="phone-us__content">Contact us</p>
                     <p class="phone-us__content">Tel: +88800000000</p> 
                 </address>
             </div>

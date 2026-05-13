@@ -67,7 +67,8 @@ main {
     background-color: rgb(74 43 51 / 1);
 }
 
-.navbar {
+header .navbar,
+footer .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -337,6 +338,44 @@ main {
     transform: translate(4px, -4px);
 }
 
-
-
 /* Form styles end*/
+
+/* Footer styles start here */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.footer .navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .nav__link {
+    color: rgb(0 0 0 / 1);
+}
+
+.footer .nav__link:hover,
+.footer .nav__link:focus {
+    outline-color: rgb(0 0 0 / 1);
+}
+
+.phone-us {
+    display: flex;
+    gap: 20px;
+}
+
+.phone-us__content {
+    font-size: 15px;
+    line-height: 24px;
+    font-style: normal;
+    margin: 0;
+}
+
+.phone-us__link {
+    display: block;
+    height: 48px;
+}
