@@ -289,9 +289,6 @@ footer .navbar {
     background-color: rgb(74 43 51 / 1);
     border: 8px solid rgb(210 116 135 / 1);
     border-radius: 100px;
-}
-
-.booking__form > * {
     color: rgb(210 116 135 / 1);
 }
 
@@ -319,6 +316,7 @@ footer .navbar {
     border-radius: 15px;
     margin: 15px auto;
     padding: 10px;
+    cursor: pointer;
 }
 
 .form__input:hover,
@@ -337,6 +335,55 @@ footer .navbar {
     font-weight: bold;
     transform: translate(4px, -4px);
 }
+
+.form__dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    font: 28px/43px "Azeret Mono", "Helvetica", sans-serif;
+    background-color: rgb(210 116 135 / 0.2);
+    color: rgb(117 117 117 / 1);
+    border: 3px solid rgb(210 116 135 / 1);
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content_show .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    max-height: 10rem;
+    overflow-y: auto;
+    background-color: rgb(210 116 135 / 0.2);
+    border: 3px solid rgb(210 116 135 / 1);
+    border-radius: 15px;
+}
+
+.dropdown-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dropdown-option {
+    padding: 0.375rem 0.75rem;
+}
+
+.dropdown-option:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: 0.2s background-color ease-in-out;
+}
+
 
 /* Form styles end*/
 
@@ -379,3 +426,5 @@ footer .navbar {
     display: block;
     height: 48px;
 }
+
+/* Footer styles end here */
